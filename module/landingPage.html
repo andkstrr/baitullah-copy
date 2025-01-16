@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baitullah - Platform Ibadah Haji dan Umroh</title>
+    <!-- STYLE -->
+    <link rel="stylesheet" href="../assets/css/style.css">
+
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- WEBSITE ICON -->
+    <link rel="icon" href="../assets/images/logo/logo-baitullah-01.png">
+
+    <!-- BOOTSTRAP CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+
+    <!-- FASTBOOTSTRAP CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/fastbootstrap@2.2.0/dist/css/fastbootstrap.min.css" rel="stylesheet" integrity="sha256-V6lu+OdYNKTKTsVFBuQsyIlDiRWiOmtC8VQ8Lzdm2i4=" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- NAVBAR -->
+    <nav class="sticky-top navbar navbar-expand-lg navbar-light bg-white shadow-lg p-3 mb-5 bg-body rounded">
+        <div class="container-lg">
+            <a class="navbar-brand" href="#">
+                <img src="../assets/images/logo/logo-baitullah-green.png" alt="Baitullah Logo" height="40">
+            </a>
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link fs-6 fw-bold" href="#">Umroh</a></li>
+                <li class="nav-item"><a class="nav-link fs-6 fw-bold" href="#">Umroh Plus</a></li>
+                <li class="nav-item"><a class="nav-link fs-6 fw-bold" href="#">Haji Khusus</a></li>
+                <li class="nav-item"><a class="nav-link fs-6 fw-bold" href="#">Wisata Halal</a></li>
+                <li class="nav-item"><a class="nav-link fs-6 fw-bold" href="#">Merchant</a></li>
+                <li class="nav-item"><a class="nav-link fs-6 fw-bold" href="#">Al-Quran</a></li>
+            </ul>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="btn btn-success rounded-pill px-7" href="#">
+                            <i class="fa-solid fa-user fa-xl"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- BANNER -->
+    <div class="container mt-5" style="margin-bottom: 90px;">
+        <div id="carouselBanner" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+            <div class="carousel-inner rounded-5">
+                <div class="carousel-item active">
+                    <img src="../assets/images/ilustration/img-banner-01.jpg" class="img-fluid radius-20">
+                </div>
+                <div class="carousel-item">
+                    <img src="../assets/images/ilustration/img-banner-02.webp"
+                        class="d-block w-100 radius-20" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="../assets/images/ilustration/img-banner-03.webp"
+                        class="d-block w-100 radius-20" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselBanner"
+                data-bs-slide="prev">
+                <i class="fa-solid fa-circle-left fa-2xl" style="color: #1f7500;"></i>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselBanner"
+                data-bs-slide="next">
+                <i class="fa-solid fa-circle-right fa-2xl" style="color: #1f7500;"></i>
+            </button>
+        </div>
+
+        <!-- KATEGORI PAKET -->
+        <div class="card-oval p-8 border shadow-lg rounded-4 mt-5"> 
+            <h3 class="fw-bold fs-2 mb-4">Kategori Paket</h3>
+            <ul class="nav list-unstyled gap-3 mb-8" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <a class="btn btn-white rounded-4" id="tab-umroh" data-bs-toggle="tab" href="#tabpanel-umroh" role="tab" aria-controls="tabpanel-umroh" aria-selected="true">
+                        <img src="../assets/images/icon/icon_app_umroh.webp" class="avatar">  Umroh
+                    </a>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <a class="btn btn-white rounded-4" id="tab-umroh-plus" data-bs-toggle="tab" href="#tabpanel-umroh-plus" role="tab" aria-controls="tabpanel-umroh-plus" aria-selected="false">
+                        <img src="../assets/images/icon/icon_app_umroh_plus.webp" class="avatar">  Umroh Plus
+                    </a>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <a class="btn btn-white rounded-4" id="tab-haji-khusus" data-bs-toggle="tab" href="#tabpanel-haji" role="tab" aria-controls="tabpanel-haji-khusus" aria-selected="false">
+                        <img src="../assets/images/icon/icon_app_Haji_Khusus.webp" class="avatar">  Haji Khusus
+                    </a>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <a class="btn btn-white rounded-4" id="tab-wisata-halal" data-bs-toggle="tab" href="#tabpanel-wisata" role="tab" aria-controls="tabpanel-wisata-halal" aria-selected="false">
+                        <img src="../assets/images/icon/icon_app_Wisata_Halal.webp" class="avatar">  Wisata Halal
+                    </a>
+                </li>
+            </ul>
+
+            <div class="tab-content mt-4">
+                <div class="tab-pane fade show active card-oval" id="tabpanel-umroh" role="tabpanel" aria-labelledby="tab-umroh">
+                    <h4 class="fw-medium mb-4">Cari Paket Umroh?</h4>
+                    <form class="row g-3 align-items-center">
+                        <div class="col-md-6">
+                            <label for="departureLocation" class="fw-medium mb-2">Lokasi Keberangkatan</label>
+                            <!-- <img src="../assets/images/icon/icon lokasi.png" alt=""> -->
+                            <select id="departureLocation" class="form-select"> 
+                                <option selected>Semua Lokasi</option>
+                                <option>Jakarta</option>
+                                <option>Bogor</option>
+                                <option>Bandung</option>    
+                            </select>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="departureTime" class="form-label fw-medium">Waktu Keberangkatan</label>
+                            <select id="departureTime" class="form-select">
+                                <option selected>Semua Waktu</option>
+                                <option>Januari</option>
+                                <option>Februari</option>
+                                <option>Maret</option>
+                            </select>
+                        </div>
+                        <div class="col-12 text-end">
+                            <button type="submit" class="btn btn-success rounded-4 px-5 py-2"><i class="fa-solid fa-search"></i> Mulai Pencarian</button>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="tab-pane fade card-oval" id="tabpanel-umroh-plus" role="tabpanel" aria-labelledby="tab-umroh-plus">
+                    <h4 class="fw-medium mb-4">Cari Paket Umroh Plus?</h4>
+                    <form class="row g-3 align-items-center">
+                        <div class="col-md-6">
+                            <label for="departureLocation" class="form-label">Lokasi Keberangkatan</label>
+                            <select id="departureLocation" class="form-select">
+                                <option selected>Semua Lokasi</option>
+                                <option>Jakarta</option>
+                                <option>Bogor</option>
+                                <option>Bandung</option>
+                            </select>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="departureTime" class="form-label">Waktu Keberangkatan</label>
+                            <select id="departureTime" class="form-select">
+                                <option selected>Semua Waktu</option>
+                                <option>Januari</option>
+                                <option>Februari</option>
+                                <option>Maret</option>
+                            </select>
+                        </div>
+                        <div class="col-12 text-end">
+                            <button type="submit" class="btn btn-success"><i class="fa-solid fa-search"></i> Mulai Pencarian</button>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="tab-pane fade card-oval" id="tabpanel-haji" role="tabpanel" aria-labelledby="tab-haji">
+                    <h4 class="fw-medium mb-4">Cari Paket Haji Khusus?</h4>
+                    <form class="row g-3 align-items-center">
+                        <div class="col-md-6">
+                            <label for="departureLocation" class="form-label">Lokasi Keberangkatan</label>
+                            <select id="departureLocation" class="form-select">
+                                <option selected>Semua Lokasi</option>
+                                <option>Jakarta</option>
+                                <option>Bogor</option>
+                                <option>Bandung</option>
+                            </select>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="departureTime" class="form-label">Waktu Keberangkatan</label>
+                            <select id="departureTime" class="form-select">
+                                <option selected>Semua Waktu</option>
+                                <option>Januari</option>
+                                <option>Februari</option>
+                                <option>Maret</option>
+                            </select>
+                        </div>
+                        <div class="col-12 text-end">
+                            <button type="submit" class="btn btn-success"><i class="fa-solid fa-search"></i> Mulai Pencarian</button>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="tab-pane fade card-oval" id="tabpanel-wisata" role="tabpanel" aria-labelledby="tab-wisata">
+                    <h4 class="fw-medium mb-4">Cari Paket Wisata Halal?</h4>
+                    <form class="row g-3 align-items-center">
+                        <div class="col-md-6">
+                            <label for="departureLocation" class="form-label">Lokasi Keberangkatan</label>
+                            <select id="departureLocation" class="form-select">
+                                <option selected>Semua Lokasi</option>
+                                <option>Jakarta</option>
+                                <option>Bogor</option>
+                                <option>Bandung</option>
+                            </select>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="departureTime" class="form-label">Waktu Keberangkatan</label>
+                            <select id="departureTime" class="form-select">
+                                <option selected>Semua Waktu</option>
+                                <option>Januari</option>
+                                <option>Februari</option>
+                                <option>Maret</option>
+                            </select>
+                        </div>
+                        <div class="col-12 text-end">
+                            <button type="submit" class="btn btn-success"><i class="fa-solid fa-search"></i> Mulai Pencarian</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    <!-- PAKET IBADAH -->
+  <div class="container mt-5" style="margin-bottom: 90px;">
+    <h2 class="fw-bold fs-2 mb-2" style="margin-top: 40px; margin-bottom: 40px;">Temukan paket ibadah menarik hanya disini!</h2>
+
+    <!-- NAVIGATION -->
+    <div class="btn-group mb-4 gap-3 mt-4" role="group">
+      <button type="button" class="btn btn-white rounded-4" style="background-color: #e6e6e6;"><img src="../assets/images/icon/icon_app_umroh.webp" class="avatar">  Umroh</button>
+      <button type="button" class="btn btn-white rounded-4"><img src="../assets/images/icon/icon_app_umroh_plus.webp" class="avatar">  Umroh Plus</button>
+      <button type="button" class="btn btn-white rounded-4"><img src="../assets/images/icon/icon_app_Haji_Khusus.webp" class="avatar">  Haji Khusus</button>
+      <button type="button" class="btn btn-white rounded-4"><img src="../assets/images/icon/icon_app_Wisata_Halal.webp" class="avatar">  Wisata Halal</button>
+    </div>
+
+    <!-- CARDS -->
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+      <div class="col shadow-lg">
+        <div class="card h-100">
+          <img src="../assets/images/ilustration/paket-2.png" class="card-img-top" alt="Promo Umroh">
+          <div class="card-body">
+            <h5 class="fw-bold">PROGRAM UMROH GOLD SERIES</h5>
+            <p class="card-text text-success fw-bold">Rp. 22.900.000</p>
+            <div class="d-flex justify-content-between align-items-center mb-3">
+                <div class="d-flex justify-content-end">
+                  <img src="../assets/images/logo/maktour.png" alt="Logo" class="avatar me-2" style="width: 40px; height: 40px;">
+                  <div>
+                    <p class="mb-0 fw-bold">KOTA BOGOR</p>
+                    <small>Maktour Haji & Umrah</small>
+                  </div>
+                  <div class="text-center">
+                    <div class="bg-light rounded-circle text-success fw-bold d-flex align-items-center justify-content-center" style="width: 50px; height: 50px;">
+                        7
+                    </div>
+                    <small>Hari</small>
+                   </div>
+                </div>
+            </div>
+            <ul class="list-unstyled">
+              <li><strong><i class="fa-solid fa-calendar" style="color: rgb(2, 131, 2);"></i> 14 Januari 2024</strong></li>
+              <li><strong><i class="fa-solid fa-plane" style="color: rgb(2, 131, 2);"></i> Garuda Indonesia</strong></li>
+              <li><strong><i class="fa-solid fa-building" style="color: rgb(2, 131, 2);"></i> Madinah - Pinewood building</strong></li>
+              <li><strong><i class="fa-solid fa-building" style="color: rgb(2, 131, 2);"></i> Madinah - Pinewood building</strong></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="col shadow-lg">
+        <div class="card h-100">
+          <img src="../assets/images/ilustration/paket-3.png" class="card-img-top" alt="Program Reguler">
+          <div class="card-body">
+            <h5 class="fw-bold">PROGRAM UMROH REGULER</h5>
+            <p class="card-text text-success fw-bold">Rp. 79.151.235</p>
+            <div class="d-flex justify-content-between align-items-center mb-3">
+                <div class="d-flex justify-content-end">
+                  <img src="../assets/images/ilustration/alrazafa.webp" alt="Logo" class="avatar me-2" style="width: 40px; height: 40px;">
+                  <div>
+                    <p class="mb-0 fw-bold">KOTA BANDUNG</p>
+                    <small>Alrazafa Group</small>
+                  </div>
+                  <div>
+                    <div class="bg-light rounded-circle text-success fw-bold d-flex align-items-center justify-content-center" style="width: 50px; height: 50px;">
+                        7
+                    </div>
+                    <small>Hari</small>
+                  </div>
+                </div>
+            </div>
+            <ul class="list-unstyled">
+              <li><strong><i class="fa-solid fa-calendar" style="color: rgb(2, 131, 2);"></i> 14 Januari 2024</strong></li>
+              <li><strong><i class="fa-solid fa-plane" style="color: rgb(2, 131, 2);"></i> Qatar Airways</strong></li>
+              <li><strong><i class="fa-solid fa-building" style="color: rgb(2, 131, 2);"></i> Madinah - Hilton building Madinah</strong></li>
+              <li><strong><i class="fa-solid fa-building" style="color: rgb(2, 131, 2);"></i> Madinah - Hilton building Madinah</strong></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="col shadow-lg">
+        <div class="card h-100">
+          <img src="../assets/images/ilustration/paket-4.png" class="card-img-top" alt="Umroh Excellent">
+          <div class="card-body">
+            <h5 class="fw-bold">PROGRAM UMROH EXCELLENT</h5>
+            <p class="card-text text-success fw-bold">Rp. 29.700.000</p>
+            <div class="d-flex justify-content-between align-items-center mb-3">
+                <div class="d-flex justify-content-end">
+                  <img src="../assets/images/logo/khazzanah tours.jpeg" alt="Logo" class="avatar me-2" style="width: 40px; height: 40px;">
+                  <div>
+                    <p class="mb-0 fw-bold">KOTA JAKARTA</p>
+                    <small>Khazzanah Tour Travel</small>
+                  </div>
+                  <div>
+                    <div class="bg-light rounded-circle text-success fw-bold d-flex align-items-center justify-content-center" style="width: 50px; height: 50px;">
+                        7
+                    </div>
+                    <small>Hari</small>
+                  </div>
+                </div>
+            </div>
+            <ul class="list-unstyled">
+              <li><strong><i class="fa-solid fa-calendar" style="color: rgb(2, 131, 2);"></i> 14 Januari 2024</strong></li>
+              <li><strong><i class="fa-solid fa-plane" style="color: rgb(2, 131, 2);"></i> Oman Air</strong></li>
+              <li><strong><i class="fa-solid fa-building" style="color: rgb(2, 131, 2);"></i> Madinah - Grand Plaza</strong></li>
+              <li><strong><i class="fa-solid fa-building" style="color: rgb(2, 131, 2);"></i> Madinah - Grand Plaza</strong></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container" style="margin-bottom: 10px;">
+    <div class="fw-bold text-center">
+        <h2 class="fw-bold fs-2">Baitullah Merchant</h2>
+        <p class="fw-bold mb-8">Bergabunglah bersama Kami! Nikmati berbagai keuntungan dengan menjadi Merchant Baitullah</p>
+    </div>
+    <div id="carouselMerchant" class="carousel slide shadow-lg radius-50" data-bs-ride="carousel" data-bs-interval="1500">
+        <div class="carousel-inner rounded-5">
+            <div class="carousel-item active">
+                <img src="../assets/images/ilustration/img-banner-01.jpg" class="img-fluid radius-20">
+            </div>
+            <div class="carousel-item">
+                <img src="../assets/images/ilustration/img-banner-02.webp"
+                    class="d-block w-100 radius-20" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="../assets/images/ilustration/img-banner-03.webp"
+                    class="d-block w-100 radius-20" alt="...">
+            </div>
+        </div>
+    </div>  
+   </div>
+
+   <!-- TABUNGAN -->
+    <div class="px-20 py-20" style="background-image: url(../assets/images/ilustration/bg-login.png); background-size: cover; background-repeat: no-repeat;">
+        <div class="container" style="margin-bottom: 70px;">
+            <div class="fw-bold text-center mb-10">
+                <h2 class="fw-bold fs-2">Buka Tabungan Umrah Online Sekarang!</h2>
+            </div>
+            <div class="banner-tabungan py-10 border shadow-lg rounded-4">
+                <div class="d-flex justify-content-center">
+                    <div class="tabungan1">
+                        <img src="..//assets/images/icon/tabungan1.png" alt="" class="img-fluid w-50 h-auto d-block mx-auto">
+                        <div class="tabungan text-center">
+                            <h2 class="fw-bold fs-3 text-success text-center">Daftarkan Diri Sekarang</h2>
+                            <p class="fw-medium fs-6">Siapkan e-KTP dan isi data diri</p>
+                        </div>
+                    </div>
+                    <div class="tabungan2">
+                        <img src="..//assets/images/icon/tabungan2.png" alt="" class="img-fluid w-50 h-auto d-block mx-auto">
+                        <div class="tabungan-text text-center">
+                            <h2 class="fw-bold fs-3 text-success">Pilih Paket</h2>
+                            <p class="fw-medium fs-6">Pilihan paket lengkap sesuai keinginan</p>
+                        </div>
+                    </div>
+                    <div class="tabungan3">
+                        <img src="..//assets/images/icon/tabungan3.webp" alt="" class="img-fluid w-50 h-auto d-block mx-auto">
+                        <div class="tabungan-text text-center">
+                            <h2 class="fw-bold fs-3 text-success">Bebas Atur Target</h2>
+                            <p class="fw-medium fs-6">Bisa setor dengan jumlah sesuai keinginan</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="btn-tabungan d-flex justify-content-center mt-8">
+                    <a href="#" class="btn btn-success rounded-5 fs-6 px-4">Selengkapnya</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- MY BAITULLAH -->
+    <div class="px-20 py-20 w-100 h-auto" style="background-image: url(../assets/images/ilustration/ilustration-footer-md.png); background-size: cover; background-repeat: no-repeat;">
+        <div class="container d-flex justify-content-end text-white" style="margin-bottom: 90px;">
+            <div class="content mt-10">
+                <div>
+                    <p class="fs-3 fw-medium">Dapatkan info terbaru seputar paket, tips perjalanan, <br> rekomendasi serta promo</p>
+                </div>
+                <div>
+                    <p class="fs-3 fw-medium">Pakai My Baitullah, umrah dan haji lebih mudah hanya <br> dalam satu genggaman</p>
+                </div>
+                <div class="d-flex justify-content-start gap-3 mt-10">
+                    <a href="#">
+                        <img src="../assets/images/logo/logo-play-tore-01.png" alt="Google Play" class="img-fluid" style="height: 50px; width: 50px; width: 200px;"">
+                    </a>
+                    <a href="#">
+                        <img src="../assets/images/logo/logo-app-store-01.png" alt="App Store" class="img-fluid" style="height: 50px; width: 20f0px;">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="px-20 py-10">
+        <div class="container-fluid text-white">
+            <div class="row mt-2 mb-16">
+                <div class="col-lg-3 col-md-6">
+                    <div class="mb-0">
+                        <a href="#">
+                            <img src="../assets/images/logo/logo-baitullah-white.png" alt="" class="img-fluid h-auto mb-5" style="width: 200px; height: 100px;">
+                        </a>
+                    </div>
+                    <div class="text-desc mb-8">
+                        <p class="fw-medium"><span class="fw-bold">Download</span>
+                        aplikasi untuk mendapatkan <br> banyak kemudahan</p>
+                    </div>
+                    <div class="mb-10">
+                        <a href="#" class="btn btn-success px-8">Daftar</a>
+                    </div>
+                    <div>
+                        <div class="d-flex gap-3 mb-5">
+                            <i class="fa-solid fa-handshake fs-3" style="color: rgb(3, 182, 98)"></i>
+                            <div class="fw-bold fs-5"> Rekan Usaha Baitullah</div>
+                        </div>
+                        <div>
+                            <a href="#" class="btn btn-light rounded-4">
+                                <img src="../assets/images/logo/logo-rekan-usaha-baitullah-01.png" alt="Hijra Bank" class="img-fluid" style="width: 80px; height: 30px;">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="fw-bold fs-5 mb-5">
+                        Tentang Baitullah
+                    </div>
+                    <div class="mb-5" style="color: #999999;">
+                        Dukungan
+                    </div>
+                    <div class="mb-5" style="color: #999999">
+                        Hubungi Kami
+                    </div>
+                    <div class="mb-5" style="color: #999999">
+                        FAQ
+                    </div>
+                    <div class="mb-5" style="color: #999999">
+                        Kebijakan Privasi
+                    </div>
+                    <div style="color: #999999">
+                        Cerita Baitullah
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="fw-bold fs-5 mb-5">
+                        Produk
+                    </div>
+                    <div class="mb-5" style="color: #999999">
+                        Umroh
+                    </div>
+                    <div class="mb-5" style="color: #999999">
+                        Umroh Plus
+                    </div>
+                    <div class="mb-5" style="color: #999999">
+                        Haji Khusus
+                    </div>
+                    <div style="color: #999999">
+                        Wisata Halal
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div>
+                        <div class="d-flex gap-4 mb-5">
+                            <img src="../assets/images/icon/icon-footer-customer-care-01.svg" alt="">
+                            <div class="fw-bold fs-5">Customer Care</div>
+                        </div>
+                        <div class="d-flex gap-5 mb-2">
+                            <img src="../assets/images/icon/icon-footer-phone-02.svg" alt="">
+                            <div class="fw-bold fs-5 mt-0 mb-0">Telepon</div>
+                        </div>
+                        <div class="mb-5" style="color: #999999">+62 817-007-7070</div>
+                        <div class="d-flex gap-5 mb-2">
+                            <img src="../assets/images/icon/icon-footer-email-03.svg" alt="">
+                            <div class="fw-bold fs-5 mt-0 mb-0">Email</div>
+                        </div>
+                        <div class="mb-5" style="color: #999999">info@baitullah.co.id</div>
+                        <div class="mb-5" style="color: #999999">
+                            Direktorat Jenderal Perlindungan Konsumen dan Tertib Niaga Kementerian Perdagangan Republik Indonesia
+                        </div>
+                        <div class="d-flex">
+                            <img src="../assets/images/icon/icon-footer-whatsapp-04.svg" alt="">
+                            <div style="color: #999999" class="mb-0">+62 853-1111-1010 <span class="fw-bold">( WhatsApp )</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <hr class="mt-10 text-white">
+
+            <!-- FOOTER BOTTOM -->
+            <div class="row pt-4 align-items-center">
+                <!-- SOSIAL MEDIA -->
+                <div class="col-lg-4 col-md-4 d-flex justify-content-start align-items-center gap-3">
+                    <a href="#">
+                        <img src="../assets/images/icon/icon-sosial-media-instagram-02.svg" alt="Instagram">
+                    </a>
+                    <a href="#">
+                        <img src="../assets/images/icon/icon-sosial-media-youtube-04.svg" alt="YouTube">
+                    </a>
+                    <a href="#">
+                        <img src="../assets/images/icon/icon-sosial-media-facebook-01.svg" alt="Facebook">
+                    </a>
+                    <a href="#">
+                        <img src="../assets/images/icon/icon-sosial-media-tiktok-03.svg" alt="TikTok">
+                    </a>
+                </div>
+            
+                <!-- COPYRIGHT -->
+                <div class="col-lg-4 col-md-4 text-center">
+                    <p class="fw-medium fs-xs m-0">© Copyright 2024 <strong>Baitullah.co.id.</strong> All Rights Reserved</p>
+                </div>
+            
+                <!-- PRIVACY POLICY -->
+                <div class="col-lg-4 col-md-4 text-end">
+                    <p class="fw-medium m-0">
+                        <a href="#" class="text-decoration-none text-light fw-normal fs-sm">Privacy Policy</a> • 
+                        <a href="#" class="text-decoration-none text-light fw-normal fs-sm">Terms & Condition</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
