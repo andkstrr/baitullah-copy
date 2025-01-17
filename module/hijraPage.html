@@ -51,14 +51,37 @@
         </div>
     </nav>
 
-    <!-- TABUNGAN -->
+    <!-- MENABUNG BERSAMA HIJRA -->
+    <div class="container mb-20">
+        <div class="row align-items-center py-5">
+            <!-- Kolom Kiri -->
+            <div class="col-sm-5 text-center text-md-start">
+                <img src="../assets/images/logo/logo-rekan-usaha-baitullah-01.png" alt="Hijra Bank Logo" class="img-fluid mb-8" style="width: 200px;">
+                <h2 class="fw-bold fs-1 mb-10">Menabung Bersama Hijra</h2>
+                <p class="text-muted mb-4 fs-sm fw-medium mb-8">
+                    Baitullah bersama dengan Hijra Bank untuk Tabungan umroh & haji akan <br>
+                    semakin memudahkan niat Anda ke Baitullah. 
+                    Download sekarang untuk mulai <br> menabung.
+                </p>
+                <a href="#" class="btn btn-lg w-100 px-4 rounded-3" style="background-color: rgb(0, 155, 194); color: white;">Mulai Menabung</a>
+            </div>
+    
+            <!-- Kolom Kanan -->
+            <div class="col-sm-7 text-center">
+                <img src="../assets/images/ilustration/hijra-bank.webp" alt="Hijra App Image" class="img-fluid" style="width: 500px; height: 400px;">
+            </div>
+        </div>
+    </div>
+        
+
+    <!-- ALUR MENABUNG -->
     <div class="container py-5 mb-16">
         <div class="row text-center">
             <div class="col-md-4">
                 <div class="mb-4">
                     <img src="../assets/images/ilustration/hijra-1.png" alt="Daftar" class="img-fluid w-50 mb-3">
                 </div>
-                <h3 class="fw-bold fs-4 text-success">Daftarkan Diri Anda</h3>
+                <h3 class="fw-bold fs-4">Daftarkan Diri Anda</h3>
                 <p class="text-muted">
                     Untuk mendaftar tabungan umroh, anda hanya menyiapkan KTP, No Handphone dan Email Aktif.
                 </p>
@@ -68,17 +91,17 @@
                 <div class="mb-4">
                     <img src="../assets/images/ilustration/hijra-2.png" alt="Tabungan" class="img-fluid w-50 mb-3">
                 </div>
-                <h3 class="fw-bold fs-4 text-success">Tabungan Umroh</h3>
+                <h3 class="fw-bold fs-4">Tabungan Umroh</h3>
                 <p class="text-muted">
                     Anda bisa langsung nabung kapan saja, dimana saja dengan mudah.
                 </p>
             </div>
-            
+
             <div class="col-md-4">
                 <div class="mb-4">
                     <img src="../assets/images/ilustration/hijra-3.png" alt="Berangkat" class="img-fluid w-50 mb-3">
                 </div>
-                <h3 class="fw-bold fs-4 text-success">Berangkat Umroh</h3>
+                <h3 class="fw-bold fs-4">Berangkat Umroh</h3>
                 <p class="text-muted">
                     Anda bisa berangkat dengan tabungan umroh sesuai paket yang ada.
                 </p>
@@ -132,7 +155,7 @@
                             <div class="fw-bold fs-5"> Rekan Usaha Baitullah</div>
                         </div>
                         <div>
-                            <a href="#" class="btn btn-light rounded-4">
+                            <a href="hijraPage.html" class="btn btn-light rounded-4">
                                 <img src="../assets/images/logo/logo-rekan-usaha-baitullah-01.png" alt="Hijra Bank" class="img-fluid" style="width: 80px; height: 30px;">
                             </a>
                         </div>
@@ -237,5 +260,23 @@
             </div>
         </div>
     </footer>
+
+    <!-- MODAL -->
+    <div class="modal fade" id="hijraModal" data-bs-keyboard="false" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-body p-0 m-0" style="background-image: url(../assets/images/ilustration/hijra-modal.png); background-repeat: no-repeat; height: 700px;"></div>
+          </div>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            // Memunculkan modal setiap kali halaman diakses
+            const hijraModal = new bootstrap.Modal(document.getElementById('hijraModal'));
+            hijraModal.show();
+        });
+    </script>
+
 </body>
 </html>
