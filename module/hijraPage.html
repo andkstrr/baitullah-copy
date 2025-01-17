@@ -23,16 +23,16 @@
 </head>
 <body>
     <!-- NAVBAR -->
-    <nav class="sticky-top navbar navbar-expand-lg navbar-light bg-white shadow-lg p-3 bg-body rounded">
+    <nav class="sticky-top navbar navbar-expand-lg navbar-light bg-white shadow-lg p-3 mb-5 bg-body rounded">
         <div class="container-lg">
             <a class="navbar-brand" href="landingPage.html">
                 <img src="../assets/images/logo/logo-baitullah-green.png" alt="Baitullah Logo" height="40">
             </a>
             <ul class="navbar-nav ms-auto">
-                <li class="nav-item"><a class="nav-link fs-6 fw-bold" href="#">Umroh</a></li>
-                <li class="nav-item"><a class="nav-link fs-6 fw-bold" href="#">Umroh Plus</a></li>
-                <li class="nav-item"><a class="nav-link fs-6 fw-bold" href="#">Haji Khusus</a></li>
-                <li class="nav-item"><a class="nav-link fs-6 fw-bold" href="#">Wisata Halal</a></li>
+                <li class="nav-item"><a class="nav-link fs-6 fw-bold" href="umrohPage.html">Umroh</a></li>
+                <li class="nav-item"><a class="nav-link fs-6 fw-bold" href="umrohPlusPage.html">Umroh Plus</a></li>
+                <li class="nav-item"><a class="nav-link fs-6 fw-bold" href="hajiKhususPage.html">Haji Khusus</a></li>
+                <li class="nav-item"><a class="nav-link fs-6 fw-bold" href="wisataHalalPage.html">Wisata Halal</a></li>
                 <li class="nav-item"><a class="nav-link fs-6 fw-bold" href="merchantPage.html">Merchant</a></li>
                 <li class="nav-item"><a class="nav-link fs-6 fw-bold" href="#">Al-Quran</a></li>
             </ul>
@@ -42,9 +42,16 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="btn btn-success rounded-pill px-7" href="#">
-                            <i class="fa-solid fa-user fa-xl"></i>
-                        </a>
+                        <div class="dropdown">
+                            <button class="btn btn-success rounded-pill px-7 dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              <i class="fa-solid fa-user fa-xl"></i>
+                            </button>
+                            <ul class="dropdown-menu" role="menu">
+                              <li><a class="dropdown-item" href="#">Action</a></li>
+                              <li><a class="dropdown-item" href="#">Another action</a></li>
+                              <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </div>
                     </li>
                 </ul>
             </div>
@@ -54,7 +61,6 @@
     <!-- MENABUNG BERSAMA HIJRA -->
     <div class="container mb-20">
         <div class="row align-items-center py-5">
-            <!-- Kolom Kiri -->
             <div class="col-sm-5 text-center text-md-start">
                 <img src="../assets/images/logo/logo-rekan-usaha-baitullah-01.png" alt="Hijra Bank Logo" class="img-fluid mb-8" style="width: 200px;">
                 <h2 class="fw-bold fs-1 mb-10">Menabung Bersama Hijra</h2>
@@ -65,10 +71,9 @@
                 </p>
                 <a href="#" class="btn btn-lg w-100 px-4 rounded-3" style="background-color: rgb(0, 155, 194); color: white;">Mulai Menabung</a>
             </div>
-    
-            <!-- Kolom Kanan -->
+
             <div class="col-sm-7 text-center">
-                <img src="../assets/images/ilustration/hijra-bank.webp" alt="Hijra App Image" class="img-fluid" style="width: 500px; height: 400px;">
+                <img src="../assets/images/ilustration/hijra-bank.webp" alt="Hijra App Image" class="img-fluid mb-8" style="width: 500px; height: 400px;">
             </div>
         </div>
     </div>
@@ -163,21 +168,21 @@
                 </div>
                 <div class="col-lg-3 col-md-6">
                     <div class="fw-bold fs-5 mb-5">
-                        Tentang Baitullah
-                    </div>
-                    <div class="mb-5" style="color: #999999;">
                         Dukungan
                     </div>
-                    <div class="mb-5" style="color: #999999">
+                    <div class="footer-text fw-semibold mb-5" style="color: #999999;">
+                        Tentang Baitullah
+                    </div>
+                    <div class="footer-text fw-semibold mb-5" style="color: #999999">
                         Hubungi Kami
                     </div>
-                    <div class="mb-5" style="color: #999999">
+                    <div class="footer-text fw-semibold mb-5" style="color: #999999">
                         FAQ
                     </div>
-                    <div class="mb-5" style="color: #999999">
+                    <div class="footer-text fw-semibold mb-5" style="color: #999999">
                         Kebijakan Privasi
                     </div>
-                    <div style="color: #999999">
+                    <div class="footer-text fw-semibold" style="color: #999999">
                         Cerita Baitullah
                     </div>
                 </div>
@@ -185,16 +190,16 @@
                     <div class="fw-bold fs-5 mb-5">
                         Produk
                     </div>
-                    <div class="mb-5" style="color: #999999">
+                    <div class="footer-text fw-semibold mb-5" style="color: #999999">
                         Umroh
                     </div>
-                    <div class="mb-5" style="color: #999999">
+                    <div class="footer-text fw-semibold mb-5" style="color: #999999">
                         Umroh Plus
                     </div>
-                    <div class="mb-5" style="color: #999999">
+                    <div class="footer-text fw-semibold mb-5" style="color: #999999">
                         Haji Khusus
                     </div>
-                    <div style="color: #999999">
+                    <div class="footer-text fw-semibold" style="color: #999999">
                         Wisata Halal
                     </div>
                 </div>
@@ -264,11 +269,19 @@
     <!-- MODAL -->
     <div class="modal fade" id="hijraModal" data-bs-keyboard="false" tabindex="-1" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
-          <div class="modal-content">
-            <div class="modal-body p-0 m-0" style="background-image: url(../assets/images/ilustration/hijra-modal.png); background-repeat: no-repeat; height: 700px;"></div>
-          </div>
+            <div class="modal-content" style="padding: 0; height: 700px;">
+                <div style="
+                    background-image: url(../assets/images/ilustration/hijra-bank-modal.png); 
+                    background-repeat: no-repeat; 
+                    background-size: cover; 
+                    background-position: center; 
+                    width: 100%; 
+                    height: 100%;">
+                </div>
+            </div>
         </div>
     </div>
+    
 
     <script>
         document.addEventListener("DOMContentLoaded", function () {
