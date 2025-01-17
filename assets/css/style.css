@@ -67,6 +67,15 @@ body {
     box-shadow: 2px 3px rgb(0, 150, 0);
 }
 
+.btn-group .btn.active {
+    background-color: #dbdbdb;
+    color: rgb(0, 150, 0);
+    box-shadow: rgb(0, 150, 0);
+    border-color: #dbdbdb;
+    padding: 5px;
+    box-shadow: 2px 3px rgb(0, 150, 0);
+}
+
 footer {
     background-color: #1D231F;
 }
