@@ -81,7 +81,7 @@ footer {
     background-color: #1D231F;
 }
 
-.footer-text:hover {
+.footer-text a:hover {
     color: rgb(0, 150, 0) !important;
     transition: 0.5s;
     cursor: pointer;
