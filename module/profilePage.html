@@ -52,25 +52,25 @@
     </nav>
 
     <div style="background-color: #f2f2f2;">
-        <div class="container">
+        <div class="container p-14">
             <!-- TABS MENU -->
             <div class="row">
                 <div class="col-sm-4">
-                    <div class="p-4 rounded-4 shadow-lg">
+                    <div class="p-4 rounded-2 shadow-lg">
                         <h3 class="fw-bold fs-4 text-success mb-5">Akun Saya</h3>
                         <ul class="tabs list-unstyled" role="tablist">
                             <li class="nav-item" role="presentation">
                                 <a class="nav-link active" id="profile" data-bs-toggle="tab" href="#profileTabs" role="tab" aria-controls="profileTabs" aria-selected="true">Ubah Profil</a>
                             </li>
                             <li class="nav-item" role="presentation">
-                                <a class="nav-link" id="pesanan" data-bs-toggle="tab" href="#pesananTabs" role="tab" aria-controls="pesananTabs" aria-selected="false">Lanjutkan Pesanan</a>
+                                <a class="nav-link" id="pesanan" data-bs-toggle="tab" href="#pesananKosong" role="tab" aria-controls="pesananTabs" aria-selected="false">Lanjutkan Pesanan</a>
                             </li>
                             <li class="nav-item" role="presentation">
-                                <a class="nav-link" id="pembayaran" data-bs-toggle="tab" href="#pembayaranTabs" role="tab" aria-controls="pembayaranTabs" aria-selected="false">Menunggu Pembayaran</a>
+                                <a class="nav-link" id="pembayaran" data-bs-toggle="tab" href="#pesananKosong" role="tab" aria-controls="pembayaranTabs" aria-selected="false">Menunggu Pembayaran</a>
                             </li>
                             <li class="nav-item" role="presentation">
-                                <a class="nav-link" id="berhasil" data-bs-toggle="tab" href="#berhasilTabs" role="tab" aria-controls="berhasilTabs" aria-selected="false">Transaksi Berhasil</a>
-                            </li>
+                                <a class="nav-link" id="berhasil" data-bs-toggle="tab" href="#pesananKosong" role="tab" aria-controls="berhasilTabs" aria-selected="false">Transaksi Berhasil</a>
+                            </li>   
                             <li class="nav-item" role="presentation">
                                 <a class="nav-link" href="landingPage.html">Keluar</a>
                             </li>
@@ -85,66 +85,67 @@
                         <div class="tab-pane active" id="profileTabs" role="tabpanel" aria-labelledby="profile">
                             <!-- NAMA PENGGUNA -->
                             <div class="card p-5 mb-5 bg-white rounded-2">
-                                <div class="d-flex justify-content-between">
-                                    <div class="justify-content-start">
-                                        <div class="d-flex gap-3">
-                                            <img class="avatar" src="../assets/images/ilustration/person-01.png">
-                                            <p class="fw-sm fs-5 mb-0">Nama Pengguna</p>
-                                        </div>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="d-flex gap-3 align-items-center">
+                                        <i class="fa-solid fa-user fa-2xl"></i>
+                                        <p class="fw-sm fs-5 mb-0">Nama Pengguna</p>
                                     </div>
-                                    <div class="justify-content-end">
-                                        <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#changeName"><i class="fa-solid fa-pen"></i> 
-                                            Ubah Nama
-                                        </button>
-                                    </div>
-                                </div><hr class="my-3">
-                                <div>
-                                    <p class="fw-medium lead mb-0">Andika Satrio Nurcahyo</p>
+                                    <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#changeName">
+                                        <i class="fa-solid fa-pen"></i> Ubah Nama
+                                    </button>
                                 </div>
-                            </div>
+                                <hr class="my-3">
+                                <div>
+                                    <p class="fw-medium fs-6 lead mb-0">Andika Satrio Nurcahyo</p>
+                                </div>
+                            </div>                              
 
                             <!-- NOMOR TELEPON -->
                             <div class="card p-5 mb-5 bg-white rounded-2">
-                                <div class="d-flex justify-content-between">
-                                    <div class="justify-content-start">
-                                        <div class="d-flex gap-3">
-                                            <i class="fa-solid fa-phone fa-2xl mb-0"></i>
-                                            <p class="fw-sm fs-5 mb-0">Nomor Telepon</p>
-                                        </div>
-                                    </div>
-                                    <div class="justify-content-end">
-                                        <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#changeName"><i class="fa-solid fa-pen"></i> 
-                                            Ubah Nama
-                                        </button>
+                                <div class="d-flex align-items-center">
+                                    <div class="d-flex gap-3 align-items-center">
+                                        <i class="fa-solid fa-phone fa-2xl mb-0"></i>
+                                        <p class="fw-sm fs-5 mb-0">Nomor Telepon</p>
                                     </div>
                                 </div><hr class="my-3">
                                 <div>
-                                    <p class="fw-medium lead mb-0">0898123456</p>
+                                    <p class="fw-medium fs-6 mb-0">0898123456</p>
                                 </div>
                             </div>
 
                             <!-- EMAIL PENGGUNA -->
                             <div class="card p-5 bg-white rounded-2">
-                                <div class="d-flex justify-content-between">
-                                    <div class="justify-content-start">
-                                        <div class="d-flex gap-3">
-                                            <i class="fa-solid fa-telephone"></i>
-                                            <p class="fw-sm fs-5 mb-0">Nomor Telepon</p>
-                                        </div>
-                                    </div>
-                                    <div class="justify-content-end">
-                                        <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#changeName"><i class="fa-solid fa-pen"></i> 
-                                            Ubah Nama
-                                        </button>
+                                <div class="d-flex align-items-center">
+                                    <div class="d-flex gap-3 align-items-center">
+                                        <i class="fa-solid fa-envelope fa-2xl mb-0"></i>
+                                        <p class="fw-sm fs-5 mb-0">Email Pengguna</p>
                                     </div>
                                 </div><hr class="my-3">
                                 <div>
-                                    <p class="fw-medium lead mb-0">0898123456</p>
+                                    <p class="fw-medium fs-6 mb-0">andikasatrionurcahyo@gmail.com</p>
                                 </div>
                             </div>
                         </div>
+
                         <!-- TAB PESANAN -->
-                        <div class="tab-pane" id="pesananTabs" role="tabpanel" aria-labelledby="pesanan">Pesanan</div>
+                        <div class="tab-pane" id="pesananKosong" role="tabpanel" aria-labelledby="pesanan">
+                            <div class="card p-5 mb-5 bg-white rounded-2">
+                                <div class="d-flex">
+                                    <!-- Gambar -->
+                                    <div class="me-4">
+                                        <img src="../assets/images/icon/pesanan-profile.webp" class="img-fluid" style="width: 120px; height: 120px;">
+                                    </div>
+                                    <!-- Konten Teks -->
+                                    <div class="flex-grow-1">
+                                        <h5 class="fw-bold fs-5 mb-2">Belum Ada Pesanan</h5>
+                                        <p class="text-muted mb-3">Silahkan melakukan pesanan terlebih dahulu</p>
+                                        <a href="landingPage.html" class="btn btn-success w-100">Pesan Disini</a>
+                                    </div>
+                                </div>
+                                <hr class="my-3">
+                            </div>
+                        </div>                        
+                        
                         <!-- TAB PEMBAYARAN  -->
                         <div class="tab-pane" id="pembayaranTabs" role="tabpanel" aria-labelledby="pembayaran">Pembayaran</div>
                         <!-- TAB BERHASIL -->
@@ -319,7 +320,7 @@
                 <input type="text" class="form-control border-0" id="changeName"><hr>
             </div>
             <div class="modal-footer">
-              <button type="button" class="btn btn-success w-100">Simpan</button>
+              <button type="button" class="btn btn-success w-100" data-bs-dismiss="modal">Simpan</button>
             </div>
           </div>
         </div>
