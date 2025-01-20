@@ -23,7 +23,7 @@
 </head>
 <body>
     <!-- NAVBAR -->
-    <nav class="sticky-top navbar navbar-expand-lg navbar-light bg-white shadow-lg p-3 mb-5 bg-body rounded">
+    <nav class="sticky-top navbar navbar-expand-lg navbar-light bg-white shadow-lg p-3 bg-body rounded">
         <div class="container-lg">
             <a class="navbar-brand" href="landingPage.html">
                 <img src="../assets/images/logo/logo-baitullah-green.png" alt="Baitullah Logo" height="40">
@@ -51,8 +51,108 @@
         </div>
     </nav>
 
-    <div class="container mt-10">
-        
+    <div style="background-color: #f2f2f2;">
+        <div class="container">
+            <!-- TABS MENU -->
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="p-4 rounded-4 shadow-lg">
+                        <h3 class="fw-bold fs-4 text-success mb-5">Akun Saya</h3>
+                        <ul class="tabs list-unstyled" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <a class="nav-link active" id="profile" data-bs-toggle="tab" href="#profileTabs" role="tab" aria-controls="profileTabs" aria-selected="true">Ubah Profil</a>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <a class="nav-link" id="pesanan" data-bs-toggle="tab" href="#pesananTabs" role="tab" aria-controls="pesananTabs" aria-selected="false">Lanjutkan Pesanan</a>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <a class="nav-link" id="pembayaran" data-bs-toggle="tab" href="#pembayaranTabs" role="tab" aria-controls="pembayaranTabs" aria-selected="false">Menunggu Pembayaran</a>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <a class="nav-link" id="berhasil" data-bs-toggle="tab" href="#berhasilTabs" role="tab" aria-controls="berhasilTabs" aria-selected="false">Transaksi Berhasil</a>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <a class="nav-link" href="landingPage.html">Keluar</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- OUTPUT TABS -->
+                <div class="col-sm-8 ">
+                    <!-- TAB PROFILE -->
+                    <div class="tab-content pt-5" id="tab-content">
+                        <div class="tab-pane active" id="profileTabs" role="tabpanel" aria-labelledby="profile">
+                            <!-- NAMA PENGGUNA -->
+                            <div class="card p-5 mb-5 bg-white rounded-2">
+                                <div class="d-flex justify-content-between">
+                                    <div class="justify-content-start">
+                                        <div class="d-flex gap-3">
+                                            <img class="avatar" src="../assets/images/ilustration/person-01.png">
+                                            <p class="fw-sm fs-5 mb-0">Nama Pengguna</p>
+                                        </div>
+                                    </div>
+                                    <div class="justify-content-end">
+                                        <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#changeName"><i class="fa-solid fa-pen"></i> 
+                                            Ubah Nama
+                                        </button>
+                                    </div>
+                                </div><hr class="my-3">
+                                <div>
+                                    <p class="fw-medium lead mb-0">Andika Satrio Nurcahyo</p>
+                                </div>
+                            </div>
+
+                            <!-- NOMOR TELEPON -->
+                            <div class="card p-5 mb-5 bg-white rounded-2">
+                                <div class="d-flex justify-content-between">
+                                    <div class="justify-content-start">
+                                        <div class="d-flex gap-3">
+                                            <i class="fa-solid fa-phone fa-2xl mb-0"></i>
+                                            <p class="fw-sm fs-5 mb-0">Nomor Telepon</p>
+                                        </div>
+                                    </div>
+                                    <div class="justify-content-end">
+                                        <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#changeName"><i class="fa-solid fa-pen"></i> 
+                                            Ubah Nama
+                                        </button>
+                                    </div>
+                                </div><hr class="my-3">
+                                <div>
+                                    <p class="fw-medium lead mb-0">0898123456</p>
+                                </div>
+                            </div>
+
+                            <!-- EMAIL PENGGUNA -->
+                            <div class="card p-5 bg-white rounded-2">
+                                <div class="d-flex justify-content-between">
+                                    <div class="justify-content-start">
+                                        <div class="d-flex gap-3">
+                                            <i class="fa-solid fa-telephone"></i>
+                                            <p class="fw-sm fs-5 mb-0">Nomor Telepon</p>
+                                        </div>
+                                    </div>
+                                    <div class="justify-content-end">
+                                        <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#changeName"><i class="fa-solid fa-pen"></i> 
+                                            Ubah Nama
+                                        </button>
+                                    </div>
+                                </div><hr class="my-3">
+                                <div>
+                                    <p class="fw-medium lead mb-0">0898123456</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- TAB PESANAN -->
+                        <div class="tab-pane" id="pesananTabs" role="tabpanel" aria-labelledby="pesanan">Pesanan</div>
+                        <!-- TAB PEMBAYARAN  -->
+                        <div class="tab-pane" id="pembayaranTabs" role="tabpanel" aria-labelledby="pembayaran">Pembayaran</div>
+                        <!-- TAB BERHASIL -->
+                        <div class="tab-pane" id="berhasilTabs" role="tabpanel" aria-labelledby="pembayaran">Berhasil</div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
     <!-- MY BAITULLAH -->
@@ -205,5 +305,24 @@
             </div>
         </div>
     </footer>
+
+    <!-- MODAL UBAH NAMA PROFILE -->
+    <div class="modal fade" tabindex="-1" id="changeName" aria-labelledby="changeNameLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title fw-bold fs-4" id="changeNameLabel">Ubah Nama</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <small for="changeName" class="form-label">Masukan Nama Lengkap</small>
+                <input type="text" class="form-control border-0" id="changeName"><hr>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-success w-100">Simpan</button>
+            </div>
+          </div>
+        </div>
+    </div>
 </body>
 </html>
